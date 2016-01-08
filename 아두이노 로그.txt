@@ -1,0 +1,148 @@
+buffer limit size : 290
+limit wait time : 10000ms
+auto pilot : 1
+lux gap : 30 lux delay : 1000ms
+init ok made by stories2
+last lux set 109
+data reset 109 : 111
+data reset 109 : 119
+data reset 109 : 117
+data reset 109 : 106
+data reset 109 : 137
+data rdy 109 : 260
+autopilot #0 -top 0 > at+wauto=0,SeaN
+Serial2WiFi APP
+[OK]
+arduino > processing delay
+
+autopilot #1 -top 1 > at+wwpa=34265013
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #2 -top 2 > at+ndhcp=1
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #3 -top 3 > at+wstart
+wifi > .................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+................................................[WIFI CONNECT]
+arduino > processing delay
+
+autopilot #4 -top 4 > at+nauto=0,1,223.194.115.119,8080[IP ACQUIRED]
+[OK]
+arduino > waiting respond
+
+autopilot #4 -top 4 > at+nauto=0,1,223.194.115.119,8080
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #5 -top 5 > at+socket
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #6 -top 6 > CONNECT 0
+[ERROR]
+arduino > resetting
+
+autopilot #8 -top 8 > at+reset
+wifi > .[OK]
+arduino > reset delay
+
+autopilot #0 -top 9 > at+wauto=0,SeaN
+Serial2WiFi APP
+arduino > processing delay
+
+autopilot #1 -top 10 > at+wwpa=34265013[OK]
+[OK]
+arduino > processing delay
+
+autopilot #2 -top 11 > at+ndhcp=1
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #3 -top 12 > at+wstart
+wifi > .................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+...[WIFI CONNECT]
+arduino > processing delay
+
+autopilot #4 -top 13 > at+nauto=0,1,223.194.115.119,8080[IP ACQUIRED]
+[OK]
+arduino > waiting respond
+
+autopilot #4 -top 13 > at+nauto=0,1,223.194.115.119,8080
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #5 -top 14 > at+socket
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #6 -top 15 > at+send=update product_light set LUX=260 where ProductMac = 'LK:JI:HG:FE:DC:BA';CONNECT 0
+[OK]
+arduino > processing delay
+
+autopilot #7 -top 16 > 1[ERROR]
+arduino > resetting
+
+autopilot #8 -top 8 > at+reset
+wifi > .[OK]
+arduino > reset delay
+
+autopilot #0 -top 9 > at+wauto=0,SeaN
+Serial2WiFi APP
+arduino > processing delay
+
+autopilot #1 -top 10 > at+wwpa=34265013[OK]
+[OK]
+arduino > processing delay
+
+autopilot #2 -top 11 > at+ndhcp=1
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #3 -top 12 > at+wstart
+wifi > .................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+........................................[WIFI CONNECT]
+arduino > processing delay
+
+autopilot #4 -top 13 > at+nauto=0,1,223.194.115.119,8080[IP ACQUIRED]
+[OK]
+arduino > waiting respond
+
+autopilot #4 -top 13 > at+nauto=0,1,223.194.115.119,8080
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #5 -top 14 > at+socket
+wifi > .[OK]
+arduino > processing delay
+
+autopilot #6 -top 15 > at+send=update product_light set LUX=260 where ProductMac = 'LK:JI:HG:FE:DC:BA';CONNECT 0
+[OK]
+arduino > processing delay
+
+autopilot #7 -top 16 > at+send=insert into product_log value('2016-1-8 21:24:31','LK:JI:HG:FE:DC:BA',0,1,'','',260);1[OK]
+arduino > processing delay
+
+autopilot #8 -top 17 > at+reset1[OK]
+arduino > reset delay
+
